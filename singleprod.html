@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Seiva</title>
+    <script src="https://kit.fontawesome.com/daba79e228.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.jpg" class="logo" alt="" width="100"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Início</a></li>
+                <li><a class="active" href="shop.html">Loja</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/IMG_20231204_101144057.jpg" width="100%" id="MainImg">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/IMG_20231204_101132966.jpg" class="small-img" width="100%">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="img/products/IMG_20231204_101132966.jpg" class="small-img" width="100%">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="img/products/IMG_20231204_101132966.jpg" class="small-img" width="100%">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Inicio/Quadros</h6>
+            <h4>Quadro Abelha</h4>
+            <h2>R$99,99</h2>
+            <select>
+                <option>Selecione o Tamanho</option>
+                <option>P</option>
+                <option>M</option>
+                <option>G</option>
+                <option>GG</option>
+            </select>
+            <input type="number" value="1">
+            <button class="button-style">Adicionar ao Carrinho</button>
+            <h4>Detalhes do Produto</h4>
+            <span>Paragrafo com a descrição do produto. Paragrafo com a descrição do produto. Paragrafo com a descrição
+                do produto. Paragrafo com a descrição do produto. Paragrafo com a descrição do produto.</span>
+
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h4>Produtos Relacionados</h4>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/products/IMG_20231204_094543620.jpg" alt="">
+                <div class="description">
+                    <span>Seiva</span>
+                    <h5>Odalisca azul</h5>
+                    <h4>R$150,00</h4>
+                </div>
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="img/products/IMG_20231204_094618345.jpg" alt="">
+                <div class="description">
+                    <span>Seiva</span>
+                    <h5>Odalisca azul</h5>
+                    <h4>R$150,00</h4>
+                </div>
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+            </div>
+
+            <div class="pro">
+                <img src="img/products/IMG_20231204_094634644.jpg" alt="">
+                <div class="description">
+                    <span>Seiva</span>
+                    <h5>Odalisca azul</h5>
+                    <h4>R$150,00</h4>
+                </div>
+                <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer id="footer" class="section-p1">
+        <div class="col">
+            <h4>Contato</h4>
+            <p><strong>Telefone:</strong> 11 - 9 9999 - 9999</p>
+            <p><strong>E-mail:</strong> meuemail@meuemail.com</p>
+            <div class="follow">
+                <h4>Siga</h4>
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Informações</h4>
+            <a href="#">Termos e condições</a>
+            <a href="#">Política de entrega</a>
+            <a href="#">Política de privacidade</a>
+
+
+        </div>
+
+        <div class="col">
+            <h4>Minha conta</h4>
+            <a href="#">Sign In</a>
+            <a href="#">Rastrear pedido</a>
+            <a href="#">Ajuda</a>
+        </div>
+
+        <div class="col">
+            <h4>Formas de pagamento</h4>
+            <p>Cartões</p>
+            <p>Mercado pago</p>
+            <p>Pix</p>
+        </div>
+
+        <div class="copyright">
+            <p> &copy 2024, FM Oliveira </p>
+        </div>
+
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+
+       
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
